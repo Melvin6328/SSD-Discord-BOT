@@ -1,0 +1,1172 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": []
+    },
+    {
+      "name": "info",
+      "actions": []
+    },
+    {
+      "name": "anwesenheit",
+      "actions": [
+        {
+          "name": "checkuser",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "anwesenheitmessage",
+              "category": "Message",
+              "type": "Send Embed",
+              "messageActionRows": [
+                {
+                  "rowtype": "button",
+                  "buttons": [
+                    {
+                      "label": "Abmelden",
+                      "customid": "abmelden",
+                      "style": "DANGER",
+                      "emoji": "",
+                      "URL": ""
+                    },
+                    {
+                      "label": "Anmelden",
+                      "customid": "anmelden",
+                      "style": "SUCCESS",
+                      "emoji": "",
+                      "URL": ""
+                    }
+                  ]
+                }
+              ],
+              "channelname": "╠「📞」an-ab-meldung",
+              "color": "6EFFFF",
+              "title": "Anwesenheit",
+              "url": "",
+              "authorname": "",
+              "authorimageurl": "",
+              "authorlink": "",
+              "description": "Wenn du dich abmelden willst für einen Tag oder länger drücke \"Abmelden\" soald du wieder kannst drücke \"Anmelden\".",
+              "thumbnail": "",
+              "image": "",
+              "footer": "Made by Melvin",
+              "timestamp": "false",
+              "savetovariable": "",
+              "savetovariabletype": "temp"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "ADMINISTRATOR"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "actions": [
+        {
+          "name": "clearmany",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "clear",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "delete",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "${tempVars.clear}"
+        }
+      ]
+    },
+    {
+      "name": "alter",
+      "actions": [
+        {
+          "name": "delete_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "fürbutton",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "12 Jahre",
+                  "customid": "12",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "13 Jahre",
+                  "customid": "13",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "14 Jahre",
+                  "customid": "14",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "15 Jahre",
+                  "customid": "15",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                }
+              ]
+            },
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "16 Jahre",
+                  "customid": "16",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "17 Jahre",
+                  "customid": "17",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "18 Jahre",
+                  "customid": "18",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                }
+              ]
+            }
+          ],
+          "channelname": "╠「🚨」rollen",
+          "color": "4DFFED",
+          "title": "Alter",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Wähle dein Alter indem du unten aud den Button drückst.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "Made by Melvin",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "tag",
+      "actions": [
+        {
+          "name": "delete_2",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "fürbutton1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "Montag",
+                  "customid": "montag",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "Dienstag",
+                  "customid": "dienstag",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "Mittwoch",
+                  "customid": "mittwoch",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "Donnerstag",
+                  "customid": "donnerstag",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "Freitag",
+                  "customid": "freitag",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                }
+              ]
+            },
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "Diese Jahr nicht",
+                  "customid": "nicht",
+                  "style": "PRIMARY",
+                  "emoji": "",
+                  "URL": ""
+                }
+              ]
+            }
+          ],
+          "channelname": "╠「🚨」rollen",
+          "color": "4DFFED",
+          "title": "Dienst-Tage auswahl",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Bitte wähle hier die Tage aus an denen du Dienst hast damit du deine Tage ganz oben angezeigt bekommst.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "Made by Melvin",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "Alter",
+      "actions": [
+        {
+          "name": "delete_3",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "alterwasweg",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "weg",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "wegrolle",
+          "category": "User Action",
+          "type": "Remove Role From User",
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "rolename": "${tempVars.weg}",
+          "reason": "Selber gewollt"
+        }
+      ]
+    },
+    {
+      "name": "Tag",
+      "actions": [
+        {
+          "name": "delete_3_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "alterwasweg_1",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "weg",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "wegrolle_1",
+          "category": "User Action",
+          "type": "Remove Role From User",
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "rolename": "${tempVars.weg}",
+          "reason": "Selber gewollt"
+        }
+      ]
+    },
+    {
+      "name": "ban",
+      "actions": [
+        {
+          "name": "delete_3_1_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertoban",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertoban",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "reasontoban",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "messageActionRows": [],
+              "varname": "reasontoban",
+              "vartype": "Text",
+              "savevartype": "temp",
+              "param": "2+"
+            },
+            {
+              "name": "banuser",
+              "category": "User Action",
+              "type": "Ban User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertoban.id}",
+              "reason": "${tempVars.reasontoban}",
+              "days": ""
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "BAN_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ban",
+      "actions": [
+        {
+          "name": "delete_3_1_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertoban",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertoban",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "reasontoban",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "messageActionRows": [],
+              "varname": "reasontoban",
+              "vartype": "Text",
+              "savevartype": "temp",
+              "param": "2+"
+            },
+            {
+              "name": "banuser",
+              "category": "User Action",
+              "type": "Ban User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertoban.id}",
+              "reason": "${tempVars.reasontoban}",
+              "days": ""
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "BAN_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "actions": [
+        {
+          "name": "delete_3_1_1_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_1",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertokick",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertokick",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "reasontokick",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "messageActionRows": [],
+              "varname": "reasontokick",
+              "vartype": "Number",
+              "savevartype": "temp",
+              "param": "2+"
+            },
+            {
+              "name": "kickuser",
+              "category": "User Action",
+              "type": "Kick User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertokick.id}",
+              "reason": "${tempVars.reasontokick}"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "KICK_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kick",
+      "actions": [
+        {
+          "name": "delete_3_1_1_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_1",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertokick",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertokick",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "reasontokick",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "messageActionRows": [],
+              "varname": "reasontokick",
+              "vartype": "Number",
+              "savevartype": "temp",
+              "param": "2+"
+            },
+            {
+              "name": "kickuser",
+              "category": "User Action",
+              "type": "Kick User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertokick.id}",
+              "reason": "${tempVars.reasontokick}"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "KICK_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mute",
+      "actions": [
+        {
+          "name": "delete_3_1_1_2",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_2",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertomut",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertomute",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "Muted",
+              "category": "User Action",
+              "type": "Add Role to User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertomute.id}",
+              "rolename": "Muted"
+            },
+            {
+              "name": "-schulsanitäter",
+              "category": "User Action",
+              "type": "Remove Role From User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertomute.id}",
+              "rolename": "Schulsanitäter",
+              "reason": "Mute"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MUTE_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mute",
+      "actions": [
+        {
+          "name": "delete_3_1_1_2",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_2",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertomut",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertomute",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "Muted",
+              "category": "User Action",
+              "type": "Add Role to User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertomute.id}",
+              "rolename": "Muted"
+            },
+            {
+              "name": "-schulsanitäter",
+              "category": "User Action",
+              "type": "Remove Role From User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertomute.id}",
+              "rolename": "Schulsanitäter",
+              "reason": "Mute"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MUTE_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "warn",
+      "actions": [
+        {
+          "name": "delete_3_1_1_3",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_3",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertowarn",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertowarn",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "warn+",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "messageActionRows": [],
+              "user": "${tempVars.usertowarn.id}",
+              "field": "warn",
+              "oper": "+",
+              "value": "1"
+            },
+            {
+              "name": "checkwarn",
+              "category": "User Data",
+              "type": "Check User Data",
+              "trueActions": [
+                {
+                  "name": "warnban",
+                  "category": "User Action",
+                  "type": "Ban User",
+                  "messageActionRows": [],
+                  "user": "${tempVars.usertowarn.id}",
+                  "reason": "6. Warnungen",
+                  "days": ""
+                }
+              ],
+              "falseActions": [
+                {
+                  "name": "checkwarn_1",
+                  "category": "User Data",
+                  "type": "Check User Data",
+                  "trueActions": [
+                    {
+                      "name": "warnkick",
+                      "category": "User Action",
+                      "type": "Kick User",
+                      "messageActionRows": [],
+                      "user": "${tempVars.usertowarn.id}",
+                      "reason": "3. Warnungen"
+                    }
+                  ],
+                  "falseActions": [
+                    {
+                      "name": "getwarn",
+                      "category": "User Data",
+                      "type": "Get User Data",
+                      "messageActionRows": [],
+                      "user": "${tempVars.usertowarn.id}",
+                      "field": "warn",
+                      "varname": "warnungen",
+                      "savevartype": "temp",
+                      "vartype": "User"
+                    },
+                    {
+                      "name": "infowarnungen",
+                      "category": "Message",
+                      "type": "Send Embed",
+                      "messageActionRows": [],
+                      "channelname": "${dbsVars.CommandChannel.id}",
+                      "color": "FF0F0F",
+                      "title": "Warnung",
+                      "url": "",
+                      "authorname": "",
+                      "authorimageurl": "",
+                      "authorlink": "",
+                      "description": "${tempVars.usertowarn.displayName} du hast nun ${tempVars.warnungen}. Warnungen. ",
+                      "thumbnail": "",
+                      "image": "",
+                      "footer": "",
+                      "timestamp": "false",
+                      "savetovariable": "",
+                      "savetovariabletype": "temp"
+                    }
+                  ],
+                  "messageActionRows": [],
+                  "user": "${tempVars.usertowarn.id}",
+                  "field": "warn",
+                  "compare": "equal to",
+                  "value": "3"
+                }
+              ],
+              "messageActionRows": [],
+              "user": "${tempVars.usertowarn.id}",
+              "field": "warn",
+              "compare": "equal to",
+              "value": "6"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MUTE_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Warn",
+      "actions": [
+        {
+          "name": "delete_3_1_1_3",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_3",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertowarn",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertowarn",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "warn+",
+              "category": "User Data",
+              "type": "Edit User Data",
+              "messageActionRows": [],
+              "user": "${tempVars.usertowarn.id}",
+              "field": "warn",
+              "oper": "+",
+              "value": "1"
+            },
+            {
+              "name": "checkwarn",
+              "category": "User Data",
+              "type": "Check User Data",
+              "trueActions": [
+                {
+                  "name": "warnban",
+                  "category": "User Action",
+                  "type": "Ban User",
+                  "messageActionRows": [],
+                  "user": "${tempVars.usertowarn.id}",
+                  "reason": "6. Warnungen",
+                  "days": ""
+                }
+              ],
+              "falseActions": [
+                {
+                  "name": "checkwarn_1",
+                  "category": "User Data",
+                  "type": "Check User Data",
+                  "trueActions": [
+                    {
+                      "name": "warnkick",
+                      "category": "User Action",
+                      "type": "Kick User",
+                      "messageActionRows": [],
+                      "user": "${tempVars.usertowarn.id}",
+                      "reason": "3. Warnungen"
+                    }
+                  ],
+                  "falseActions": [
+                    {
+                      "name": "getwarn",
+                      "category": "User Data",
+                      "type": "Get User Data",
+                      "messageActionRows": [],
+                      "user": "${tempVars.usertowarn.id}",
+                      "field": "warn",
+                      "varname": "warnungen",
+                      "savevartype": "temp",
+                      "vartype": "User"
+                    },
+                    {
+                      "name": "infowarnungen",
+                      "category": "Message",
+                      "type": "Send Embed",
+                      "messageActionRows": [],
+                      "channelname": "${dbsVars.CommandChannel.id}",
+                      "color": "FF0F0F",
+                      "title": "Warnung",
+                      "url": "",
+                      "authorname": "",
+                      "authorimageurl": "",
+                      "authorlink": "",
+                      "description": "${tempVars.usertowarn.displayName} du hast nun ${tempVars.warnungen}. Warnungen. ",
+                      "thumbnail": "",
+                      "image": "",
+                      "footer": "",
+                      "timestamp": "false",
+                      "savetovariable": "",
+                      "savetovariabletype": "temp"
+                    }
+                  ],
+                  "messageActionRows": [],
+                  "user": "${tempVars.usertowarn.id}",
+                  "field": "warn",
+                  "compare": "equal to",
+                  "value": "3"
+                }
+              ],
+              "messageActionRows": [],
+              "user": "${tempVars.usertowarn.id}",
+              "field": "warn",
+              "compare": "equal to",
+              "value": "6"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MUTE_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unmute",
+      "actions": [
+        {
+          "name": "delete_3_1_1_3_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_3_1",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertomut_1",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertounmute",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "+schulsanitäter",
+              "category": "User Action",
+              "type": "Add Role to User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertounmute.id}",
+              "rolename": "Schulsanitäter"
+            },
+            {
+              "name": "-muted",
+              "category": "User Action",
+              "type": "Remove Role From User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertounmute.id}",
+              "rolename": "Muted",
+              "reason": "Unmute"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MUTE_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unmute",
+      "actions": [
+        {
+          "name": "delete_3_1_1_3_1",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "checkuser_1_3_1",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "usertomut_1",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "messageActionRows": [],
+              "varname": "usertounmute",
+              "vartype": "User",
+              "savevartype": "temp"
+            },
+            {
+              "name": "+schulsanitäter",
+              "category": "User Action",
+              "type": "Add Role to User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertounmute.id}",
+              "rolename": "Schulsanitäter"
+            },
+            {
+              "name": "-muted",
+              "category": "User Action",
+              "type": "Remove Role From User",
+              "messageActionRows": [],
+              "user": "${tempVars.usertounmute.id}",
+              "rolename": "Muted",
+              "reason": "Unmute"
+            }
+          ],
+          "falseActions": [],
+          "messageActionRows": [],
+          "user": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "MUTE_MEMBERS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bot",
+      "actions": [
+        {
+          "name": "bot1_2",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "cpuusage",
+          "vartype": "temp",
+          "varname": "cpuusage"
+        },
+        {
+          "name": "bot1_3",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "hostname",
+          "vartype": "temp",
+          "varname": "bothostname"
+        },
+        {
+          "name": "bot1_4",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "botplatform",
+          "vartype": "temp",
+          "varname": "botplatform"
+        },
+        {
+          "name": "bot1_5",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "usedram",
+          "vartype": "temp",
+          "varname": "usedram"
+        },
+        {
+          "name": "bot1_6",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "freeram",
+          "vartype": "temp",
+          "varname": "freeram"
+        },
+        {
+          "name": "bot1",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "totalram",
+          "vartype": "temp",
+          "varname": "totalram"
+        },
+        {
+          "name": "bot5",
+          "category": "Message",
+          "type": "Up Time",
+          "messageActionRows": [],
+          "uptimemsg": "Online Time: Tage: $$days$$ | Stunden: $$hours$$ | Minuten: $$minutes$$ | Sekunden: $$seconds$$"
+        },
+        {
+          "name": "botmessage",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "A07DFF",
+          "title": "Bot Infos",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "CPU Usage: ${tempVars.cpuusage}\nBothostname: ${tempVars.bothostname}\nBotplatform: ${tempVars.botplatform}\nUsed RAM: ${tempVars.usedram}\nFree RAM: ${tempVars.freeram}\nTotal RAM: ${tempVars.totalram}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "bot",
+      "actions": [
+        {
+          "name": "bot1_2",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "cpuusage",
+          "vartype": "temp",
+          "varname": "cpuusage"
+        },
+        {
+          "name": "bot1_3",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "hostname",
+          "vartype": "temp",
+          "varname": "bothostname"
+        },
+        {
+          "name": "bot1_4",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "botplatform",
+          "vartype": "temp",
+          "varname": "botplatform"
+        },
+        {
+          "name": "bot1_5",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "usedram",
+          "vartype": "temp",
+          "varname": "usedram"
+        },
+        {
+          "name": "bot1_6",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "freeram",
+          "vartype": "temp",
+          "varname": "freeram"
+        },
+        {
+          "name": "bot1",
+          "category": "Bot Action",
+          "type": "BotSystemInfo",
+          "messageActionRows": [],
+          "main": "totalram",
+          "vartype": "temp",
+          "varname": "totalram"
+        },
+        {
+          "name": "bot5",
+          "category": "Message",
+          "type": "Up Time",
+          "messageActionRows": [],
+          "uptimemsg": "Online Time: Tage: $$days$$ | Stunden: $$hours$$ | Minuten: $$minutes$$ | Sekunden: $$seconds$$"
+        },
+        {
+          "name": "botmessage",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "A07DFF",
+          "title": "Bot Infos",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "CPU Usage: ${tempVars.cpuusage}\nBothostname: ${tempVars.bothostname}\nBotplatform: ${tempVars.botplatform}\nUsed RAM: ${tempVars.usedram}\nFree RAM: ${tempVars.freeram}\nTotal RAM: ${tempVars.totalram}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    }
+  ]
+}

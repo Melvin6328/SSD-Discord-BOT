@@ -1,0 +1,468 @@
+{
+  "command": [
+    {
+      "name": "User Joins Server",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "newuser"
+      }
+    },
+    {
+      "name": "Any Message",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "User Kicked",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "kickuser"
+      }
+    },
+    {
+      "name": "User Banned",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "banuser"
+      }
+    },
+    {
+      "name": "Bot Initialization",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "Channel Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdchannel"
+      }
+    },
+    {
+      "name": "Channel Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedchannel"
+      }
+    },
+    {
+      "name": "Channel Pins Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatepinschannel"
+      }
+    },
+    {
+      "name": "Channel Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatechannel"
+      }
+    },
+    {
+      "name": "Emoji Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdemoji"
+      }
+    },
+    {
+      "name": "Emoji Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedemoji"
+      }
+    },
+    {
+      "name": "Emoji Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatedemoji"
+      }
+    },
+    {
+      "name": "Guild Ban Remove",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Available",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Speaking",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Unavailable",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Typing Start",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "User Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Button Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Button",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "anmelden": [
+              {
+                "name": "anwesendset",
+                "category": "User Data",
+                "type": "Set User Data",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "field": "check",
+                "fieldvalue": "1"
+              },
+              {
+                "name": "messagetolog",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "╠「🟢」anwesend",
+                "color": "08FF0C",
+                "title": "${tempVars.buttoninteraction.member.displayName}",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "🟢 Ist zum Einsatz Bereit.\n",
+                "thumbnail": "",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "abmelden": [
+              {
+                "name": "abwesenheitset",
+                "category": "User Data",
+                "type": "Set User Data",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "field": "check",
+                "fieldvalue": "0"
+              },
+              {
+                "name": "messagetolog_1",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "╠「🔴」abwesend",
+                "color": "FF0808",
+                "title": "${tempVars.buttoninteraction.member.displayName}",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "🔴 Ist nicht zum Einsatz Bereit.\n",
+                "thumbnail": "",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ],
+            "nicht": [
+              {
+                "name": "tag_5",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "Abwesend"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "deletemessage",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${tempVars.buttoninteraction.channelId}",
+          "msgcount": "1"
+        },
+        {
+          "name": "Tage",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "montag": [
+              {
+                "name": "tag",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "Montag"
+              }
+            ],
+            "dienstag": [
+              {
+                "name": "tag_1",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "Dienstag"
+              }
+            ],
+            "mittwoch": [
+              {
+                "name": "tag_2",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "Mittwoch"
+              }
+            ],
+            "donnerstag": [
+              {
+                "name": "tag_3",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "Donnerstag"
+              }
+            ],
+            "freitag": [
+              {
+                "name": "tag_4",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "Freitag"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "alter",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "12": [
+              {
+                "name": "Alter",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "12"
+              }
+            ],
+            "13": [
+              {
+                "name": "Alter_1",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "13"
+              }
+            ],
+            "14": [
+              {
+                "name": "Alter_2",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "14"
+              }
+            ],
+            "15": [
+              {
+                "name": "Alter_3",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "15"
+              }
+            ],
+            "16": [
+              {
+                "name": "Alter_4",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "16"
+              }
+            ],
+            "17": [
+              {
+                "name": "Alter_5",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "17"
+              }
+            ],
+            "18": [
+              {
+                "name": "Alter_6",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "rolename": "18"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Select Interaction",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Command Interaction",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    }
+  ]
+}
